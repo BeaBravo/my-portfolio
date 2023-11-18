@@ -2,7 +2,7 @@
 }
 
 * {
-  /* border: 2px solid red !important; */
+  box-sizing: border-box;
 }
 
 html {
@@ -70,4 +70,29 @@ nav a {
   text-decoration: none;
   color: #806666;
   font-weight: bolder;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  margin: 2%;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+#first-project {
+  background-image: url(../images/under-construction-sign.jpg);
+  height: 100px;
+}
+
+#project2,
+#project3,
+#project4,
+#project5 {
+  max-width: 50%;
+  flex: 0 0 50%;
 }
