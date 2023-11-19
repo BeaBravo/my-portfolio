@@ -104,7 +104,7 @@ main {
 #project4,
 #project5 {
   max-width: 50%;
-  flex: 0 0 50%;
+  flex: 1 1 50%;
 }
 
 .project-box {
@@ -127,7 +127,7 @@ main {
 
 #first-project {
   max-width: 100%;
-  flex: 0 0 100%;
+  flex: 1 1 100%;
   position: relative;
 }
 
@@ -170,13 +170,14 @@ footer {
   }
 
   h2 {
-    width: 25%;
-    border: 2px solid red;
+    width: 20%;
+    text-align: right;
+    padding-right: 2%;
   }
 
   .text-section {
     flex-grow: 1;
-    border-left: 3px solid blue;
+    width: 100%;
   }
 
   .projects div {
@@ -197,6 +198,13 @@ footer {
     align-items: center;
   }
 
+  .projects,
+  .text-section {
+    max-width: 80%;
+    border-left: 7px solid lightblue;
+    padding-left: 5%;
+  }
+
   .projects figcaption {
     font-size: revert;
     bottom: 25%;
@@ -210,13 +218,13 @@ footer {
   }
 
   #first-project {
-    flex: 0 0 80%;
+    flex: 1 1 80%;
   }
 
   #project2,
   #project3,
   #project4,
   #project5 {
-    flex: 0 0 40%;
+    flex: 1 1 40%;
   }
 }
