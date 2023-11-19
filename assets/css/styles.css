@@ -60,9 +60,11 @@ header {
   color: black;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  padding: 1%;
 }
 header nav {
   display: flex;
+  min-width: 300px;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -129,4 +131,16 @@ footer {
   border-top: 0.5rem solid black;
   border-bottom: 0.5rem solid black;
   text-align: center;
+}
+
+/* Styles for bigger screens: */
+@media screen and (min-width: 768px) {
+  header nav {
+    width: auto;
+  }
+
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
