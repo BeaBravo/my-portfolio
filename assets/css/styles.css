@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -91,9 +93,31 @@ main {
   margin: 2%;
   flex-wrap: wrap;
   flex-direction: row;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
 }
 
-.projects figure {
+.projects div {
   max-width: 50%;
   flex: 0 0 50%;
+  padding: 1.75rem;
+  position: relative;
+}
+
+.projects div figure {
+  border: 1px solid red;
+  position: relative;
+}
+
+.projects div figure figcaption {
+  position: absolute;
+  background-color: rgb(133, 133, 214);
+  bottom: 0;
+  line-height: 1em;
+  font-size: small;
+}
+
+.projects #first-project {
+  max-width: 100%;
+  flex: 0 0 100%;
 }
