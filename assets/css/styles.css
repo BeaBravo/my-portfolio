@@ -1,3 +1,7 @@
+/* Default styles are for mobile screens, bigger screens are styled at the bottom of this file  */
+
+/* Root styles including color pallets are here */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -58,6 +62,8 @@ h6 {
   font-size: 1.5rem;
 }
 
+/* Header Styles */
+
 header {
   display: flex;
   background-color: lightpink;
@@ -72,20 +78,26 @@ header nav {
   width: 100%;
   justify-content: space-evenly;
 }
-nav a {
+
+header nav a {
   text-decoration: none;
   color: #806666;
   font-weight: bolder;
 }
 
+/* Font color changes when user hovers over any of the nav elements */
 header nav a:hover {
   color: white;
 }
+
+/* Main Styles */
 
 main {
   display: flex;
   flex-direction: column;
 }
+
+/* Work section styles */
 
 #work {
   display: flex;
@@ -99,6 +111,12 @@ main {
   flex-direction: row;
 }
 
+/* This will make the first project appear bigger compared to the other ones */
+#first-project {
+  max-width: 100%;
+  flex: 1 1 100%;
+  position: relative;
+}
 #project2,
 #project3,
 #project4,
@@ -125,12 +143,7 @@ main {
   font-size: small;
 }
 
-#first-project {
-  max-width: 100%;
-  flex: 1 1 100%;
-  position: relative;
-}
-
+/* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
 .project-box:hover {
   cursor: pointer;
   box-shadow: 0px 0px 0 3px black;
@@ -139,6 +152,8 @@ main {
 .project-box:hover img {
   opacity: 1;
 }
+
+/* Footer styles. it is the same colour as the header and always at the bottom of the page */
 
 footer {
   background-color: lightpink;
@@ -150,14 +165,21 @@ footer {
 }
 
 /* Styles for bigger screens: */
+
 @media screen and (min-width: 768px) {
-  header nav {
-    width: auto;
+  h2 {
+    width: 20%;
+    text-align: right;
+    padding-right: 2%;
   }
 
   header {
     justify-content: space-between;
     align-items: center;
+  }
+
+  header nav {
+    width: auto;
   }
 
   main {
@@ -169,22 +191,6 @@ footer {
     margin-bottom: 5%;
   }
 
-  h2 {
-    width: 20%;
-    text-align: right;
-    padding-right: 2%;
-  }
-
-  .text-section {
-    flex-grow: 1;
-    width: 100%;
-  }
-
-  .projects div {
-    margin-top: 2%;
-    margin-bottom: 2%;
-  }
-
   #about-me,
   #contact {
     display: flex;
@@ -193,29 +199,35 @@ footer {
     justify-content: flex-start;
   }
 
+  .text-section {
+    flex-grow: 1;
+    width: 100%;
+  }
+
   #work {
     flex-direction: row;
     align-items: center;
   }
 
+  .projects div {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+  .projects figcaption {
+    font-size: revert;
+    bottom: 25%;
+    padding: 1%;
+  }
   .projects,
   .text-section {
     max-width: 80%;
     border-left: 7px solid lightblue;
     padding-left: 5%;
   }
-
-  .projects figcaption {
-    font-size: revert;
-    bottom: 25%;
-    padding: 1%;
-  }
 }
 
 @media screen and (min-width: 1022px) {
-  #work {
-    align-items: center;
-  }
+  /* for screens 1022px and larger the projects won't take 100% of the section  */
 
   #first-project {
     flex: 1 1 80%;
