@@ -24,6 +24,7 @@ h4,
 h5,
 h6 {
   margin-bottom: 0.625rem;
+  margin-left: 0.25rem;
   /* color: */
   font-weight: 700;
   line-height: 1.1;
@@ -74,7 +75,6 @@ nav a {
   font-weight: bolder;
 }
 
-
 main {
   display: flex;
   flex-direction: column;
@@ -85,32 +85,25 @@ main {
   flex-direction: column;
 }
 
-.first-project {
+.projects,
+.other-projects {
   display: flex;
-  margin: 2%;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.projects {
-  display: flex;
-  margin: 2%;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
-}
-
-.projects div {
+#project2,
+#project3,
+#project4,
+#project5 {
   max-width: 50%;
   flex: 0 0 50%;
-  padding: 1.75rem;
-  position: relative;
 }
 
 .projects div figure {
   border: 1px solid red;
   position: relative;
+  margin: 0.5rem;
 }
 
 .projects div figure figcaption {
@@ -121,9 +114,10 @@ main {
   font-size: small;
 }
 
-.projects #first-project {
+#first-project {
   max-width: 100%;
   flex: 0 0 100%;
+  position: relative;
 }
 
 footer {
@@ -142,6 +136,33 @@ footer {
 
   header {
     justify-content: space-between;
+    align-items: center;
+  }
+
+  main {
+    padding: 0 10%;
+  }
+
+  h2 {
+    width: 25%;
+    border: 2px solid red;
+  }
+
+  .text-section {
+    flex-grow: 1;
+    border-left: 3px solid blue;
+  }
+
+  #about-me,
+  #contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #work {
+    flex-direction: row;
     align-items: center;
   }
 }
