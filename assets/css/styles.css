@@ -143,6 +143,15 @@ main {
   font-size: small;
 }
 
+#contact .text-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#contact .text-section a {
+  text-decoration: none;
+}
+
 /* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
 .project-box:hover {
   cursor: pointer;
