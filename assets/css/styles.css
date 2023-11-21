@@ -150,6 +150,11 @@ main {
   color: var(--background-color);
 }
 
+.project-box figcaption h6 {
+  color: var(--background-color);
+  margin: 0;
+}
+
 #contact .text-section {
   display: flex;
   justify-content: space-evenly;
@@ -157,6 +162,7 @@ main {
 
 #contact .text-section a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 /* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
@@ -234,7 +240,7 @@ footer {
   .projects,
   .text-section {
     max-width: 80%;
-    border-left: 7px solid lightblue;
+    border-left: 7px solid var(--border-color);
     padding-left: 5%;
   }
 }
