@@ -1,6 +1,11 @@
 /* Default styles are for mobile screens, bigger screens are styled at the bottom of this file  */
 
 /* Root styles including color pallets are here */
+:root {
+  --background-color: #9a275a;
+  --text-color: #e2c6c2;
+  --border-color: #cb958e;
+}
 
 * {
   box-sizing: border-box;
@@ -13,12 +18,12 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial,
+    sans-serif;
   font-size: 1.75rem;
   line-height: 1.5;
-  /* color:
-    background-color:  */
+  color: var(--text-color);
+  background: var(--background-color);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -32,14 +37,14 @@ h5,
 h6 {
   margin-bottom: 0.625rem;
   margin-left: 0.25rem;
-  /* color: */
-  font-weight: 700;
+  color: var(--text-color);
+  font-weight: 250;
   line-height: 1.1;
 }
 
 h1 {
   font-size: 4rem;
-  margin-bottom: 0;
+  margin-bottom: 0.25rem;
 }
 
 h2 {
@@ -66,12 +71,11 @@ h6 {
 
 header {
   display: flex;
-  background-color: lightpink;
-  color: black;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 1%;
 }
+
 header nav {
   display: flex;
   min-width: 300px;
@@ -81,13 +85,13 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: #806666;
   font-weight: bolder;
+  color: var(--text-color);
 }
 
 /* Font color changes when user hovers over any of the nav elements */
 header nav a:hover {
-  color: white;
+  color: #806666;
 }
 
 /* Main Styles */
@@ -128,13 +132,13 @@ main {
 }
 
 .project-box {
-  border: 1px solid red;
+  border: 3px solid var(--border-color);
   position: relative;
   margin: 0.5rem;
 }
 
 .project-box img {
-  opacity: 0.5;
+  opacity: 0.75;
 }
 
 .project-box figcaption {
