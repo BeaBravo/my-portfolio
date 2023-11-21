@@ -109,7 +109,7 @@ main {
 /* about me styles */
 
 #about-me {
-  justify-content: center;
+  text-align: justify;
 }
 
 /* Work section styles */
