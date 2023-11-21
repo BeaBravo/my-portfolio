@@ -67,6 +67,10 @@ h6 {
   font-size: 1.5rem;
 }
 
+p {
+  font-weight: lighter;
+}
+
 /* Header Styles */
 
 header {
@@ -163,6 +167,7 @@ main {
 #contact .text-section a {
   text-decoration: none;
   color: var(--text-color);
+  font-weight: lighter;
 }
 
 /* when the user hovers any of the projects a box appears around the project and the image opacity changes from 0.5 to 1 */
