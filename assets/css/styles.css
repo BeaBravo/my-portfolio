@@ -5,6 +5,12 @@
   --background-color: #9a275a;
   --text-color: #e2c6c2;
   --border-color: #cb958e;
+  --selection-color: #e2bfba;
+}
+
+::selection {
+  background-color: var(--selection-color);
+  color: var(--background-color);
 }
 
 * {
@@ -183,6 +189,10 @@ main {
 
 .project-box:hover img {
   opacity: 1;
+}
+
+#first-project:active {
+
 }
 
 /* Footer styles. it is the same colour as the header and always at the bottom of the page */
