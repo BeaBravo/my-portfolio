@@ -75,7 +75,7 @@ h6 {
 }
 
 p {
-  font-weight: lighter;
+  font-weight: 150;
 }
 
 /* Header Styles */
@@ -153,20 +153,21 @@ main {
 }
 
 .project-box img {
-  opacity: 0.75;
+  opacity: 0.85;
 }
 
 .project-box figcaption {
   position: absolute;
   background-color: var(--border-color);
   bottom: 0;
-  line-height: 1em;
+  line-height: 1.25em;
   font-size: small;
   color: var(--background-color);
 }
 
 .project-box figcaption h6 {
   color: var(--background-color);
+  font: bolder;
   margin: 0;
 }
 
@@ -250,8 +251,8 @@ footer {
   }
   .projects figcaption {
     font-size: revert;
-    bottom: 25%;
-    padding: 1%;
+    /* bottom: 25%;
+    padding: 1%; */
   }
   .projects,
   .text-section {
