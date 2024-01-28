@@ -4,7 +4,7 @@
 
 This repo was created to build a portfolio with work samples for potential employers to see and review
 
-link to deployed site: (https://beabravo.github.io/my-portfolio/)
+link to deployed site: https://beabravo.github.io/my-portfolio/
 
 ## Installation
 
